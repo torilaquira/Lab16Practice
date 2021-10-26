@@ -1,0 +1,12 @@
+<h1 style= "text-align: center; color: pink">Thoughts!!</h1>
+
+<ng-container *ngFor="let mypos of myposts">
+    <app-onepost [theposts]="mypos"></app-onepost>
+</ng-container>
+<h3 style="text-align: center; color: purple">Title: <input type="text" [(ngModel)]="thetitle"/> <br>
+Thought: <input type="text" [(ngModel)]="thethought"/> </h3><br>
+
+
+<div style="align-items: center; color: red">
+<button (click)="add()">Submit</button>
+</div>
